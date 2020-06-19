@@ -1,0 +1,278 @@
+body {
+  font-family: "B612", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  width: 100%;
+}
+.navigation {
+  transition: 0.3s ease-in;
+}
+.inactive-tab {
+  display: none !important;
+}
+.col img {
+  transition: transform 0.2s;
+  max-width: 50%;
+  max-height: 100%;
+  padding-top: 10px;
+}
+.col img:hover {
+  transform: scale(1.1);
+}
+
+.sonai {
+  width: 20%;
+  height: 20%;
+}
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+.video {
+  object-fit: co;
+}
+.videopadingas {
+  padding: 50 !important;
+  margin: 500 !important;
+}
+
+.jumbotron {
+  background: url("https://wallpaperaccess.com/full/959294.jpg") no-repeat
+    center;
+  background-size: cover;
+}
+.parallax {
+  color: #fff;
+  width: 100%;
+  min-height: 300px;
+}
+.social ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social ul li {
+  list-style: none;
+}
+.social ul li a {
+  display: block;
+  position: relative;
+  padding-top: 0px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+
+  text-decoration: none;
+  color: #262626;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+.social ul li a span {
+  position: absolute;
+  transition: transform 0.5s;
+}
+.social ul li a span:nth-child(1),
+.social ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1px;
+  background: #262626;
+}
+.social ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.social ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.social ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.social ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+/*..............................................*/
+.obuolys {
+}
+.social ul li a span:nth-child(2),
+.social ul li a span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  background: #262626;
+}
+.social ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.social ul li a:hover span:nth-child(2) {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.social ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.social ul li a:hover span:nth-child(4) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.footer {
+  overflow-y: auto;
+}
+.aa {
+  display: flex !important;
+}
+.photo {
+  background-image: url(../photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.spalvaa {
+  background-color: #e7e7e7;
+}
+.photo2 {
+  background-image: url(../photo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.photo3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lightbox img {
+  height: 100%;
+}
+
+h7 {
+  color: white;
+}
+.balta {
+  color: black;
+}
+
+.containerr {
+  max-width: 100% !important;
+  width: 100% important;
+}
+.social1 {
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+.social2 {
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+.social3 {
+  padding-bottom: 30px;
+}
+.social a {
+  font-size: 2.5em;
+}
+.contactt {
+  background-color: #b8b8b8 !important;
+}
+.virsus {
+  padding-top: 20px;
+}
+.tarpai {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.apacia {
+  padding-bottom: 0px !important;
+}
+.footeriotarpas {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: ;
+}
+.virsuss {
+  padding-top: 60px;
+}
+.spalva {
+  background-color: #c60063 !important;
+}
+.spalvafooter {
+  background-color: black;
+}
+.btn-antras {
+  color: #c60063 !important;
+  background-color: transparent !important;
+  border-color: #c60063 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+#galerija .img-container img {
+  box-shadow: 4px 4px 6px #bfa8a2;
+}
+
+#canvas-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.img-fluid {
+  height: 200px !important;
+  width: 100% !important;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    min-width: 100%;
+    height: 100%;
+    object-position: -700px;
+  }
+  body {
+    background: url("poster.jpg");
+    background-size: cover;
+  }
+}
